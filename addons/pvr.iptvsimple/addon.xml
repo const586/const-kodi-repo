@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <addon  
-  id="pvr.p2pproxy"  
+  id="pvr.iptvsimple"  
   version="0.0.4"  
   name="PVR P2pProxy Client1"  
   provider-name="const86">  

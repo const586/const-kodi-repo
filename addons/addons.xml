@@ -39,7 +39,7 @@
 </addon>
 
 <addon
-  id="pvr.p2pproxy"
+  id="pvr.iptvsimple"
   version="0.0.4"
   name="PVR P2pProxy Client1"
   provider-name="const86">
@@ -74,7 +74,7 @@
 <addon
   id="pvr.p2pproxy"
   version="0.0.4"
-  name="PVR P2pProxy Client1"
+  name="PVR P2pProxy Client2"
   provider-name="const86">
   <requires>
     <c-pluff version="0.1"/>
