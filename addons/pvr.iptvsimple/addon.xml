@@ -2,7 +2,7 @@
 <addon  
   id="pvr.iptvsimple"  
   version="1.9.3"  
-  name="PVR P2pProxy Client"  
+  name="PVR IPTV Simple Client"  
   provider-name="nightik">  
   <requires>  
     <c-pluff version="0.1"/>  

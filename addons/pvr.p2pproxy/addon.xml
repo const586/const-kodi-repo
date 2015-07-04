@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <addon  
-  id="pvr.p2pproxy"  
-  version="0.0.4"  
-  name="PVR P2pProxy Client2"  
-  provider-name="const86">  
+  id="pvr.iptvsimple"  
+  version="1.9.3"  
+  name="PVR P2pProxy Client"  
+  provider-name="nightik">  
   <requires>  
     <c-pluff version="0.1"/>  
     <import addon="xbmc.pvr" version="1.9.0"/>  
