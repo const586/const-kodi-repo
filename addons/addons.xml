@@ -40,9 +40,9 @@
 
 <addon
   id="pvr.p2pproxy"
-  version="1.9.3"
+  version="0.0.4"
   name="PVR P2pProxy Client1"
-  provider-name="nightik">
+  provider-name="const86">
   <requires>
     <c-pluff version="0.1"/>
     <import addon="xbmc.pvr" version="1.9.0"/>
