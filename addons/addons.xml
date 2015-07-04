@@ -1,3 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.video.const.kinozal.tv"
+       name="kinozal.tv by const"
+       version="1.1.2"
+       provider-name="nuismons">
+	<requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.beautifulsoup"/>
+		<import addon="script.module.torrent.ts"/>
+	</requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>const.kinozal.tv</summary>
+        <description>kinozal.tv by const</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.torrent.tv"
+       name="Torrent-TV.RU"
+       version="2.1.6"
+       provider-name="Const86, -=St.Anger=-">
+    <requires>
+		<import addon="script.module.torrent.ts"/>
+		<import addon="script.module.beautifulsoup"/>
+		<import addon="xbmc.python" version="2.1.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Torrent-TV.RU</summary>
+        <description>Просмотр ТВ через Torrent Stream</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon
+  id="pvr.p2pproxy"
+  version="0.0.3"
+  name="PVR P2pProxy Client"
+  provider-name="const86">
+  <requires>
+    <c-pluff version="0.1"/>
+    <import addon="xbmc.pvr" version="1.9.0"/>
+  </requires>
+  <extension
+    point="xbmc.pvrclient"
+    library_linux="p2pproxy.pvr"
+    library_osx="p2pproxy.pvr"
+    library_wingl="p2pproxy.dll"
+    library_windx="p2pproxy.dll"
+    library_android="p2pproxy.so" />
+  <extension point="xbmc.addon.metadata">
+    <platform>linux windx wingl osx android</platform>
+  </extension>
+</addon>
+
+<addon id="repository.nuismons" name="NuisMons XBMC Add-ons" version="1.0.2" provider-name="NuisMons">
+	<extension point="xbmc.addon.repository" name="NuisMons Add-ons">
+		<info compressed="false">https://raw.githubusercontent.com/NuisMons/nuXBMCRepo/master/addons/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/NuisMons/nuXBMCRepo/master/addons/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/NuisMons/nuXBMCRepo/master/zip</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Add-ons from NuisMons Add-on Repository</summary>
+		<description>Plug-ins for XBMC</description>
+		<disclaimer>There are svn fot my add-ons for XBMC</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.seppius" name="Seppius XBMC Add-ons" version="1.0.0" provider-name="seppius">
+	<extension point="xbmc.addon.repository" name="Seppius XBMC Add-ons">
+		<info compressed="false">http://seppius-xbmc-repo.googlecode.com/svn/trunk/addons/addons.xml</info>
+		<checksum>http://seppius-xbmc-repo.googlecode.com/svn/trunk/addons/addons.xml.md5</checksum>
+		<datadir zip="false">http://seppius-xbmc-repo.googlecode.com/svn/trunk/addons/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Add-ons from seppius Add-on Repository</summary>
+		<description>Plug-ins for XBMC</description>
+		<disclaimer>There are add-ons that allow viewing popular Russian resources in the program XBMC</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.game.center"
+       name="Game Center"
+       version="0.0.1"
+       provider-name="const86">
+    <requires>
+	<import addon="xbmc.python" version="2.1.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>programs</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Game Center</summary>
+        <description>Игры Dendy, Sega, Playstation и др.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.beautifulsoup"
+       name="BeautifulSoup"
+       version="3.2.1"
+       provider-name="Leonard Richardson (leonardr@segfault.org)">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
+    <description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
+    <license>BSD</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.simplejson"
+       name="simplejson"
+       version="3.3.0"
+       provider-name="Martijn">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en">Simple, fast, extensible JSON encoder/decoder for Python</summary>
+    <description lang="en">Simple, fast, extensible JSON encoder/decoder for Python</description>
+    <disclaimer lang="en">Code taken from https://pypi.python.org/pypi/simplejson/</disclaimer>
+    <license>MIT License, Academic Free License v. 2.1</license>
+    <website>https://pypi.python.org/pypi/simplejson/</website>
+    <source>https://pypi.python.org/pypi/simplejson/</source>
+  </extension>
+</addon>
+
+<addon id='script.module.torrent.ts' version='0.6.0.28' name='AceStream Client' provider-name='NuisMons'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="tsserv.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary>AceStream Engine support</summary>
+  </extension>
+  <extension library="default.py" point="xbmc.service" />
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id="script.torrent-tv.ru"
+       name="Torrent-TV XBMC"
+       version="1.5.4"
+       provider-name="Torrent-TV">
+    <requires>
+		  <import addon="xbmc.python" version="2.1.0" />
+      <import addon="script.module.beautifulsoup"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension library="autostart.py" point="xbmc.service" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Torrent-TV XBMC</summary>
+        <description>Торрент ТВ теперь можно смотреть на медиаплатформе XBMC.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
 </addons>
