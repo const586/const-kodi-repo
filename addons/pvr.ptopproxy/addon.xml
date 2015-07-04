@@ -10,11 +10,8 @@
   </requires>  
   <extension  
     point="xbmc.pvrclient"  
-    library_linux="XBMC_IPTV_Simple.pvr"  
-    library_osx="XBMC_IPTV_Simple.pvr"  
-    library_wingl="XBMC_IPTV_Simple_win32.dll"  
-    library_windx="XBMC_IPTV_Simple_win32.dll"  
-    library_android="libXBMC_IPTV_Simple.so" />  
+    library_wingl="pvr.ptopproxy.dll"  
+    library_windx="pvr.ptopproxy.dll"/>  
   <extension point="xbmc.addon.metadata">  
     <summary lang="en">XBMC PVR addon for IPTV support. https://github.com/afedchin/xbmc-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>  
     <summary lang="ru">XBMC PVR аддон для поддержки IPTV.  https://github.com/afedchin/xbmc-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>  
@@ -28,6 +25,6 @@
     <disclaimer lang="ru">Это нестабильная программа Авторы не несут ответственности за неудачные воспроизведение, неверные время EPG, потраченное время и прочие нежелательные эффекты.</disclaimer>  
     <disclaimer lang="de">Dies ist instabile Software Die Autoren sind zu keiner Zeit verantworlich für fehlerhafte Abspielungen, falsche EPG Zeiten oder andere Unvorhersehbarkeiten.</disclaimer>  
     <disclaimer lang="nl">Dit is onstabiele software De auteurs zijn op geen enkele manier aansprakelijk voor falen in afspelen, incorrecte EPG tijden, verspilde uren, of wel ongewenst effect dan ook.</disclaimer>  
-    <platform>linux windx wingl osx android</platform>  
+    <platform>windx wingl</platform>  
   </extension>  
 </addon>  
