@@ -39,7 +39,7 @@
 </addon>
 
 <addon
-  id="pvr.iptvsimple"
+  id="pvr.p2pproxy"
   version="1.9.3"
   name="PVR P2pProxy Client"
   provider-name="nightik">
