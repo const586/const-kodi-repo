@@ -82,13 +82,10 @@
   </requires>
   <extension
     point="xbmc.pvrclient"
-    library_linux="p2pproxy.pvr"
-    library_osx="p2pproxy.pvr"
     library_wingl="pvr.p2pproxy.dll"
-    library_windx="pvr.p2pproxy.dll"
-    library_android="p2pproxy.so" />
+    library_windx="pvr.p2pproxy.dll" />
   <extension point="xbmc.addon.metadata">
-    <platform>linux windx wingl osx android</platform>
+    <platform>windx wingl</platform>
   </extension>
 </addon>
 
