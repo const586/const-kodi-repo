@@ -1,6 +1,6 @@
 # XBMC Media Center language file
 # Addon Name: PVR IPTV Simple Client
-# Addon id: pvr.iptvsimple
+# Addon id: pvr.p2pproxy
 # Addon Provider: nightik
 # Translators:
 # Bloksel <mgboom@gmail.com>, 2013
@@ -21,8 +21,8 @@ msgstr ""
 msgctxt "Addon Summary"
 msgid ""
 "XBMC PVR addon for IPTV support. https://github.com/afedchin/xbmc-addon-"
-"iptvsimple/wiki/IPTV-Simple-Home"
-msgstr "XBMC PVR addon voor IPTV support. https://github.com/afedchin/xbmc-addon-iptvsimple/wiki/IPTV-Simple-Home"
+"p2pproxy/wiki/IPTV-Simple-Home"
+msgstr "XBMC PVR addon voor IPTV support. https://github.com/afedchin/xbmc-addon-p2pproxy/wiki/IPTV-Simple-Home"
 
 msgctxt "Addon Description"
 msgid ""

@@ -1,6 +1,6 @@
 # XBMC Media Center language file
 # Addon Name: PVR IP-TV Simple Client
-# Addon id: pvr.iptvsimple
+# Addon id: pvr.p2pproxy
 # Addon version: 0.1.2
 # Addon Provider: nightik
 # Translators:

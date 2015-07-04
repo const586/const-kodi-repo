@@ -1,6 +1,6 @@
-# XBMC Media Center language file
+﻿# XBMC Media Center language file
 # Addon Name: PVR IP-TV Simple Client
-# Addon id: pvr.iptvsimple
+# Addon id: pvr.p2pproxy
 # Addon version: 0.1.0
 # Addon Provider: nightik
 msgid ""
@@ -40,7 +40,7 @@ msgid "M3U Play List Path"
 msgstr ""
 
 msgctxt "#30012"
-msgid "M3U Play List URL"
+msgid "Server URL"
 msgstr ""
 
 msgctxt "#30013"
