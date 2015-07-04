@@ -73,7 +73,7 @@
 
 <addon
   id="pvr.p2pproxy"
-  version="1.9.3"
+  version="0.0.4"
   name="PVR P2pProxy Client"
   provider-name="const">
   <requires>
