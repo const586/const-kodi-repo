@@ -13,6 +13,7 @@ class Generator:
     """
     def __init__( self ):
         # generate file
+	self.p = None
         self._generate_addons_file()
         self._generate_md5_file()
         
@@ -41,11 +42,10 @@ class Generator:
                 # we succeeded so add to our final addons.xml text
                 addons_xml += addon_xml.rstrip() + "\n\n"
 		version = xml.etree.ElementTree.parse(_path).getroot().get("version")
-		print "version: %s" % version
-		cmd = "zip -r %s/%s-%s.zip %s/*" % (addon, addon, version, addon)
-		#args = cmd.split(" ")
-		#subprocess.Popen(["pwd"])
-		self.p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+		if not os.path.exists("%s/%s-%s.zip" % (addon, addon, version)):
+			cmd = "zip -r %s/%s-%s.zip %s/*" % (addon, addon, version, addon)
+			self.p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+			print "Created arhive %s" % cmd
             except Exception, e:
                 # missing or poorly formatted addon.xml
                 print "Excluding %s for %s" % ( _path, e, )
@@ -81,5 +81,6 @@ if ( __name__ == "__main__" ):
 	# start
 	print "Hello"
 	gen = Generator()
-	gen.p.wait()
+	if gen.p != None:
+		gen.p.wait()
 	print "what the fack"
