@@ -2,6 +2,8 @@
 """ addons.xml generator """
 
 import os, md5
+import subprocess
+import time
 
 class Generator:
     """
@@ -38,6 +40,10 @@ class Generator:
                     addon_xml += unicode (line.rstrip() + "\n", "utf-8")
                 # we succeeded so add to our final addons.xml text
                 addons_xml += addon_xml.rstrip() + "\n\n"
+		cmd = "zip -r %s/%s.zip %s/*" % (addon, addon, addon)
+		#args = cmd.split(" ")
+		#subprocess.Popen(["pwd"])
+		self.p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
             except Exception, e:
                 # missing or poorly formatted addon.xml
                 print "Excluding %s for %s" % ( _path, e, )
@@ -70,6 +76,6 @@ class Generator:
                 print "An error occured saving md5 file\n%s" % ( e, )
 
 if ( __name__ == "__main__" ):
-    # start
-    Generator()
-
+	# start
+	gen = Generator()
+	gen.p.wait()
