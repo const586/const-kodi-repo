@@ -3,7 +3,7 @@
 
 import os, md5
 import subprocess
-import time
+import xml.etree.ElementTree
 
 class Generator:
     """
@@ -40,7 +40,9 @@ class Generator:
                     addon_xml += unicode (line.rstrip() + "\n", "utf-8")
                 # we succeeded so add to our final addons.xml text
                 addons_xml += addon_xml.rstrip() + "\n\n"
-		cmd = "zip -r %s/%s.zip %s/*" % (addon, addon, addon)
+		version = xml.etree.ElementTree.parse(_path).getroot().get("version")
+		print "version: %s" % version
+		cmd = "zip -r %s/%s-%s.zip %s/*" % (addon, addon, version, addon)
 		#args = cmd.split(" ")
 		#subprocess.Popen(["pwd"])
 		self.p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
@@ -77,5 +79,7 @@ class Generator:
 
 if ( __name__ == "__main__" ):
 	# start
+	print "Hello"
 	gen = Generator()
 	gen.p.wait()
+	print "what the fack"
